@@ -10,7 +10,6 @@
     - Objective
 - Analysis Outputs
     - Hypothesis testing
-- Detailed Summary and Recommendations
 
 ## Project Introduction
 
