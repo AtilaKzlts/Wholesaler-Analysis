@@ -1,3 +1,4 @@
+![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/bar.png)
 
 # Wholesaler Weekday&Weekend Sales Analysis
 
@@ -9,12 +10,11 @@
     - Objective
 - Analysis Outputs
     - Hypothesis testing
-    - Forecasting model
-- Detailed Summary and Recommendations
 
 ## Project Introduction
 
-Bu proje, toptancı sirketimizin satışlarının hafta içi ve hafta sonu arasındaki farkları incelemeyi amaçlamaktadır. Satışların dağılımı, kategorilere göre performans farklılıkları, önemli ürünlerin hafta içi ve hafta sonu yillik satış trendleri ile ilgili analizler yapılacaktır. İstatistiksel testler ve görselleştirmeler kullanılarak, hangi ürün ve kategorilerin hafta içi veya hafta sonu daha fazla talep gördüğü ogrenilerek gerekli adimlar atilmasi amaclanmistir
+This project aims to analyze the differences between weekday and weekend sales of our wholesale company in 2024. Analyses will be conducted on the distribution of sales, performance differences by category, and annual sales trends of key products on weekdays and weekends. Using statistical tests and visualizations, it is aimed to find out which products and categories are more in demand on weekdays or weekends and to take the necessary steps
+
 
 ## Executive Summary:
 This analysis reveals important differences by examining the distribution of wholesaler sales on weekdays and weekends. The majority of weekly sales occur on weekdays, while weekend sales are lower and more volatile. While total weekly sales are over 700,000, weekend sales remain at around 250,000. Broken down by category, books had the highest sales both on weekdays and weekends, with 251,783 units on weekdays and 76,199 units on weekends. Clothing, home furnishings and sporting goods also showed high sales on weekdays, while electronics had the lowest sales. Weekday sales are 3 times higher than weekend sales, especially in the book category. Statistical tests show that there are significant differences between weekday and weekend sales .In product-by-product comparisons, some products (e.g. P006) show high variation in weekday sales, while others (P094) show little variation between weekdays and weekends. This suggests that P006 requires a dynamic marketing and inventory management strategy, while P094 requires a lower risk strategy. As a result, weekday sales are generally higher and it would be beneficial to tailor campaign and promotion strategies specifically for weekends.
@@ -32,7 +32,8 @@ This analysis reveals important differences by examining the distribution of who
 
 
 
-### Objectives:
+## Objectives:
+
  - Comparing weekday and weekend sales distribution
 
  - Perform statistical tests to determine whether the differences between sales are significant
@@ -99,16 +100,6 @@ The most affected categories are Books and Housewares.
 Consumers' shopping behavior is generally shaped in favor of business days.
 Weekday sales work against each category, with a significant decline especially in the Books category.
 
-### **Hypothesis testing**
-
-+ H₀ (Null Hypothesis): There is no statistically significant difference between the medians of weekday and weekend sales. In other words, sales have similar distribution on weekdays and weekends.
-
-+ H₁ (Alternative Hypothesis): There is a statistically significant difference between the medians of weekday and weekend sales. In other words, sales vary on different days of the week.
-
-Hypothesis Test Result:
-There is a statistically **significant difference** between weekday and weekend sales.
-
-
 ![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/6.png)
 
 **Low Sales Differential Products:**
@@ -163,3 +154,34 @@ We can summarize the observations obtained from the analysis of monthly product 
 - **P006**: This product can be defined as a product that focuses on business days and shows seasonal fluctuations. It peaks in August.
 - **P018/P019**: Products with higher weekend consumption. Their sales are more balanced and consistent than during the week.
   
+
+-----
+
+### **Hypothesis testing**
+
++ H₀ (Null Hypothesis): There is no statistically significant difference between the medians of weekday and weekend sales. In other words, sales have similar distribution on weekdays and weekends.
+
++ H₁ (Alternative Hypothesis): There is a statistically significant difference between the medians of weekday and weekend sales. In other words, sales vary on different days of the week.
+
+Hypothesis Test Result:
+
+
+```Normality Test for Weekday Sales:
+NormaltestResult(statistic=5939.771752813036, pvalue=0.0)
+
+Normality Test for Weekend Sales:
+NormaltestResult(statistic=2073.919896685083, pvalue=0.0)
+
+Levene Test (Homogeneity of Variance):
+Statistic: 60.7659
+p-value: 0.0000
+
+Mann-Whitney U Test Results:
+Statistic: 146544714.0000
+p-value: 0.0000
+
+Hypothesis Test Result:
+p-value (0.0000) < 0.05, thus the null hypothesis (H0) is rejected.
+```
+
+There is a statistically **significant difference** between weekday and weekend sales.
