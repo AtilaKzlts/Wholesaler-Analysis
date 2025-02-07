@@ -1,3 +1,4 @@
+![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/bar.png)
 
 # Wholesaler Weekday&Weekend Sales Analysis
 
@@ -9,7 +10,6 @@
     - Objective
 - Analysis Outputs
     - Hypothesis testing
-    - Forecasting model
 - Detailed Summary and Recommendations
 
 ## Project Introduction
@@ -99,16 +99,6 @@ The most affected categories are Books and Housewares.
 Consumers' shopping behavior is generally shaped in favor of business days.
 Weekday sales work against each category, with a significant decline especially in the Books category.
 
-### **Hypothesis testing**
-
-+ H₀ (Null Hypothesis): There is no statistically significant difference between the medians of weekday and weekend sales. In other words, sales have similar distribution on weekdays and weekends.
-
-+ H₁ (Alternative Hypothesis): There is a statistically significant difference between the medians of weekday and weekend sales. In other words, sales vary on different days of the week.
-
-Hypothesis Test Result:
-There is a statistically **significant difference** between weekday and weekend sales.
-
-
 ![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/6.png)
 
 **Low Sales Differential Products:**
@@ -163,3 +153,34 @@ We can summarize the observations obtained from the analysis of monthly product 
 - **P006**: This product can be defined as a product that focuses on business days and shows seasonal fluctuations. It peaks in August.
 - **P018/P019**: Products with higher weekend consumption. Their sales are more balanced and consistent than during the week.
   
+
+-----
+
+### **Hypothesis testing**
+
++ H₀ (Null Hypothesis): There is no statistically significant difference between the medians of weekday and weekend sales. In other words, sales have similar distribution on weekdays and weekends.
+
++ H₁ (Alternative Hypothesis): There is a statistically significant difference between the medians of weekday and weekend sales. In other words, sales vary on different days of the week.
+
+Hypothesis Test Result:
+
+
+```Normality Test for Weekday Sales:
+NormaltestResult(statistic=5939.771752813036, pvalue=0.0)
+
+Normality Test for Weekend Sales:
+NormaltestResult(statistic=2073.919896685083, pvalue=0.0)
+
+Levene Test (Homogeneity of Variance):
+Statistic: 60.7659
+p-value: 0.0000
+
+Mann-Whitney U Test Results:
+Statistic: 146544714.0000
+p-value: 0.0000
+
+Hypothesis Test Result:
+p-value (0.0000) < 0.05, thus the null hypothesis (H0) is rejected.
+```
+
+There is a statistically **significant difference** between weekday and weekend sales.
