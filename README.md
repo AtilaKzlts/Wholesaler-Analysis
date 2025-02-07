@@ -31,7 +31,8 @@ This analysis reveals important differences by examining the distribution of who
 
 
 
-### Objectives:
+## Objectives:
+
  - Comparing weekday and weekend sales distribution
 
  - Perform statistical tests to determine whether the differences between sales are significant
