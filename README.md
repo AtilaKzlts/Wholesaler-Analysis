@@ -64,23 +64,20 @@ When we analyze weekday and weekend sales by category, books stand out as the be
 ![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/4.png)
 ㅤㅤ
 Weekday vs Weekend Comparison:
-Book
+
++ Book
 Weekday: 251,783 | Weekend: 76,199
 Weekdays are 3.3 times higher than weekends.
-
-Clothing:
++ Clothing:
 Weekday: 157,897 | Weekend: 83,274
 On weekdays, about twice as many as on weekends.
-
-Electronics:
++ Electronics:
 Weekday: 60,210 | Weekend: 21,834
 Weekdays significantly more than weekends.
-
-Household Goods:
++ Household Goods:
 Weekdays: 147,416 | Weekend: 44,342
 Weekdays 3.3 times as many as weekends.
-
-Sports Products:
++ Sports Products:
 Weekday: 100,327 | Weekend: 53,635
 Weekdays are almost twice as long as weekends.
 
@@ -95,8 +92,8 @@ Sales Differences by Category:
 + Electronics: -38,376 (Against weekdays)
 + Home Furnishings: -103,074 (Against weekdays)
 + Sport: -46,692 (Against weekdays)
-+ Overall Sales Differences:
 
+Overall Sales Differences:
 Sales differences range between 47% and 70%.
 The most affected categories are Books and Housewares.
 Consumers' shopping behavior is generally shaped in favor of business days.
@@ -109,8 +106,7 @@ Weekday sales work against each category, with a significant decline especially 
 + H₁ (Alternative Hypothesis): There is a statistically significant difference between the medians of weekday and weekend sales. In other words, sales vary on different days of the week.
 
 Hypothesis Test Result:
-p-value (0.0000) < 0.05, thus the null hypothesis (H0) is rejected.
-There is a statistically significant difference between weekday and weekend sales.
+There is a statistically **significant difference** between weekday and weekend sales.
 
 
 ![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/6.png)
@@ -147,7 +143,7 @@ In this analysis, it can be concluded that given the high variability of P006, m
 ![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/7.png)
 
 
-
+**Yearly Trends**
 ![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/8.png)
 
 We can summarize the observations obtained from the analysis of monthly product sales patterns as follows:
