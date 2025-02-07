@@ -43,7 +43,7 @@ This analysis reveals important differences by examining the distribution of who
  - The 10 best-selling products on weekdays and weekends
  - Analyzing weekday and weekend sales trends during the year and identifying trends
 
-
+[See the Notebook](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/wholoesaler.ipynb)
 ## Analysis Outputs
 
 ![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/1.png)
