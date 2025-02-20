@@ -166,7 +166,8 @@ We can summarize the observations obtained from the analysis of monthly product 
 Hypothesis Test Result:
 
 
-```Normality Test for Weekday Sales:
+```
+Normality Test for Weekday Sales:
 NormaltestResult(statistic=5939.771752813036, pvalue=0.0)
 
 Normality Test for Weekend Sales:
@@ -185,3 +186,42 @@ p-value (0.0000) < 0.05, thus the null hypothesis (H0) is rejected.
 ```
 
 There is a statistically **significant difference** between weekday and weekend sales.
+
+-------
+
+#### Post-Hoc
++ No normal distribution.
++ Variance is not homogeneous.
+
+In this case we used the non-parametric Kruskal-Wallis test
+
+Since Kruskal-Wallis found a significant difference, we used Dunn's Test to determine which days were different.
+
+``` 
+import scikit_posthocs as sp
+
+posthoc = sp.posthoc_dunn(df_hypo, val_col='sales', group_col='day_of_week', p_adjust='bonferroni')
+print(posthoc)
+
+              0             1             2             3             4  \
+0  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00   
+1  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00   
+2  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00   
+3  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00   
+4  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00   
+5  4.140573e-10  1.230872e-09  1.875968e-09  1.183575e-10  2.080132e-10   
+6  3.998982e-09  1.132433e-08  1.693210e-08  1.206819e-09  2.070223e-09   
+
+              5             6  
+0  4.140573e-10  3.998982e-09  
+1  1.230872e-09  1.132433e-08  
+2  1.875968e-09  1.693210e-08  
+3  1.183575e-10  1.206819e-09  
+4  2.080132e-10  2.070223e-09  
+5  1.000000e+00  1.000000e+00  
+6  1.000000e+00  1.000000e+00  
+```
+
++ Monday - Friday Similar to each other
++ Saturday & Sunday Significantly different from weekdays
++ Saturday - Sunday Similar to each other
