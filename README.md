@@ -1,6 +1,11 @@
 ![image](https://github.com/AtilaKzlts/Wholesaler-Analysis/blob/main/assets/bar.png)
 
-# Wholesaler Weekday&Weekend Sales Analysis
+
+<div align="center">
+  <h1>Wholesaler Weekday&Weekend Sales Analysis</h1>
+ </p>
+</div>
+
 
 ## Table of Contents
 
