@@ -203,8 +203,6 @@ In this case we used the non-parametric Kruskal-Wallis test
 Since Kruskal-Wallis found a significant difference, we used Dunn's Test to determine which days were different.
 
 ``` 
-import scikit_posthocs as sp
-
 posthoc = sp.posthoc_dunn(df_hypo, val_col='sales', group_col='day_of_week', p_adjust='bonferroni')
 print(posthoc)
 
