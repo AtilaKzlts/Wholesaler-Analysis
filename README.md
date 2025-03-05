@@ -18,7 +18,7 @@
 
 ## Project Introduction
 
-This project aims to analyze the differences between weekday and weekend sales of our wholesale company in 2024. Analyses will be conducted on the distribution of sales, performance differences by category, and annual sales trends of key products on weekdays and weekends. Using statistical tests and visualizations, it is aimed to find out which products and categories are more in demand on weekdays or weekends and to take the necessary steps
+This project aims to analyze the differences between weekday and weekend sales of our wholesale company in 2024. The distribution of weekday and weekend sales of key products, performance differences by category and annual sales trends will be analyzed. Statistical tests and visualizations will be used to identify which products and categories are more in demand on weekdays or weekends and to take the necessary steps to increase sales through proper marketing.
 
 
 ## Executive Summary:
