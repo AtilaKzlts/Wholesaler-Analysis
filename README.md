@@ -22,7 +22,32 @@ This project aims to analyze the differences between weekday and weekend sales o
 
 
 ## Executive Summary:
-This analysis reveals important differences by examining the distribution of wholesaler sales on weekdays and weekends. The majority of weekly sales occur on weekdays, while weekend sales are lower and more volatile. While total weekly sales are over 700,000, weekend sales remain at around 250,000. Broken down by category, books had the highest sales both on weekdays and weekends, with 251,783 units on weekdays and 76,199 units on weekends. Clothing, home furnishings and sporting goods also showed high sales on weekdays, while electronics had the lowest sales. Weekday sales are 3 times higher than weekend sales, especially in the book category. Statistical tests show that there are significant differences between weekday and weekend sales .In product-by-product comparisons, some products (e.g. P006) show high variation in weekday sales, while others (P094) show little variation between weekdays and weekends. This suggests that P006 requires a dynamic marketing and inventory management strategy, while P094 requires a lower risk strategy. As a result, weekday sales are generally higher and it would be beneficial to tailor campaign and promotion strategies specifically for weekends.
+
+- **Overall Sales Distribution:**  
+  - Weekday sales account for the majority of total weekly sales.  
+  - **Total weekly sales exceed 700,000 units, while weekend sales remain around 250,000**, showing higher volatility.  
+  - Weekend sales are **lower and more inconsistent**, indicating greater demand fluctuations.  
+
+- **Category Breakdown:**  
+  - **Books had the highest sales**, with **251,783 units on weekdays** and **76,199 units on weekends**.  
+  - **Clothing, home furnishings, and sporting goods** performed well on weekdays, while **electronics had the lowest sales overall**.  
+  - **Weekday book sales were three times higher than on weekends**, emphasizing a strong weekday demand.  
+
+- **Weekday vs. Weekend Sales Ratio:**  
+  - **Weekday sales are 3x higher than weekend sales** across multiple categories.  
+  - The book category exhibits the **largest gap**, highlighting the need for optimized inventory and supply chain strategies.  
+
+- **Product-Level Insights:**  
+  - **P006 shows high weekday variation**, requiring a **dynamic marketing and inventory strategy** to manage fluctuating demand.  
+  - **P094 maintains stable sales across both periods**, making it suitable for a **low-risk inventory approach**.  
+  - Some products display **significant differences between weekday and weekend sales**, while others remain more stable, requiring tailored strategies.  
+
+- **Recommendations & Strategic Takeaways:**  
+  - **Optimize inventory and supply chain management for strong weekday demand.**  
+  - **Implement weekend-specific promotions, discounts, and campaigns to boost weekend sales.**  
+  - **Use dynamic pricing and flexible inventory strategies for high-variability products like P006.**  
+  - **Maintain cost-efficient stock levels for stable products like P094 to reduce inventory risks.**  
+
 
 ## About the Data Set
 
